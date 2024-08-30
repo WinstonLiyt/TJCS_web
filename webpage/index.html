@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>学院网站</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f4f8;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      background-color: #003366;
+      color: #ffffff;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .header-logo img {
+      height: 60px;
+      margin-right: 20px;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .navbar {
+      background-color: #00509e;
+      color: white;
+      padding: 10px 0;
+      border-bottom: 2px solid #003366;
+    }
+
+    .navbar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .navbar li {
+      display: inline;
+      margin: 0 20px;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px;
+      gap: 20px;
+    }
+
+    .block {
+      background-color: #ffffff;
+      border: 1px solid #dcdcdc;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 300px;
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .block:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .carousel {
+      position: relative;
+      overflow: hidden;
+      height: 180px;
+      width: 100%;
+      max-width: 280px;
+      margin: 0 auto;
+    }
+
+    .carousel-images {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel-images img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .footer {
+      background-color: #003366;
+      color: #ffffff;
+      padding: 10px;
+      text-align: center;
+      border-top: 2px solid #00509e;
+      font-size: 14px;
+    }
+
+    .footer a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-logo">
+      <img src="logo.png" alt="同济大学校徽" />
+    </div>
+    <h1>同济大学 计算机学院 官网</h1>
+  </header>
+  <nav class="navbar" style="text-align: left">
+    <ul>
+      <li><a href="index.html">首页</a></li>
+      <li><a href="research.html">科学研究</a></li>
+      <li><a href="course.html">教务教学</a></li>
+      <li><a href="admin.html">党群工作</a></li>
+      <li><a href="student.html">学生风采</a></li>
+      <li><a href="aboutus.html">关于我们</a></li>
+    </ul>
+  </nav>
+  <main class="container">
+    <section class="block" onclick="navigateTo('research')">
+      <div class="carousel">
+        <div class="carousel-images">
+          <img src="1.png" alt="科学研究 1" />
+          <img src="2.png" alt="科学研究 2" />
+        </div>
+      </div>
+      <h3>科学研究</h3>
+      <p>科研成果、研究论文、项目报告</p>
+    </section>
+    <section class="block" onclick="navigateTo('course')">
+      <div class="carousel">
+        <div class="carousel-images">
+          <img src="3.png" alt="教务教学 1" />
+          <img src="4.png" alt="教务教学 2" />
+        </div>
+      </div>
+      <h3>教务教学</h3>
+      <p>课程信息、教学材料、在线课堂</p>
+    </section>
+    <section class="block" onclick="navigateTo('admin')">
+      <div class="carousel">
+        <div class="carousel-images">
+          <img src="5.png" alt="党群工作 1" />
+          <img src="6.png" alt="党群工作 2" />
+        </div>
+      </div>
+      <h3>党群工作</h3>
+      <p>在线办公、学术活动、人员考勤</p>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2024 同济大学计算机学院 | 地址: 上海市嘉定区曹安公路4800号 | 电话: 021-65982643 | 电子邮件: <a
+        href="mailto:info@cs.tongji.edu.cn">info@cs.tongji.edu.cn</a></p>
+  </footer>
+  <script>
+    function navigateTo(section) {
+      window.location.href = section + ".html";
+    }
+
+  </script>
+  <script>
+    // Initialize carousel
+    let carouselIndex = 0;
+
+    function startCarousel() {
+      const carousels = document.querySelectorAll('.carousel-images');
+      carousels.forEach(carousel => {
+        const images = carousel.querySelectorAll('img');
+        const totalSlides = images.length;
+
+        setInterval(() => {
+          carouselIndex = (carouselIndex + 1) % totalSlides;
+          images.forEach((img, index) => {
+            img.style.transform = `translateX(-${carouselIndex * 100}%)`;
+          });
+        }, 1000);
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      startCarousel(); // Start the carousel
+    });
+  </script>
+</body>
+
+</html>

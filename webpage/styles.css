@@ -1,0 +1,394 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #003366;
+    /* Dark blue */
+    color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-logo img {
+    height: 60px;
+    /* Adjust the size of the emblem */
+    margin-right: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+    /* Adjust font size if needed */
+}
+
+.navbar {
+    background-color: #00509e;
+    /* Blue */
+    color: white;
+    padding: 10px 0;
+    border-bottom: 2px solid #003366;
+    /* Dark blue */
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+    gap: 20px;
+    /* Added gap between blocks */
+}
+
+.block {
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    /* Rounded corners for a softer look */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    /* Increased padding for a more spacious feel */
+    width: 300px;
+    /* Slightly wider blocks */
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.block:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    height: 180px;
+    /* Adjust based on your desired height */
+    width: 100%;
+    /* Ensure full width */
+    max-width: 280px;
+    /* Limit width to match block size */
+    margin: 0 auto;
+    /* Center carousel */
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.footer {
+    background-color: #003366;
+    /* Dark blue */
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    border-top: 2px solid #00509e;
+    /* Blue */
+    font-size: 14px;
+    /* Adjust font size as needed */
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
+.container {
+    margin: 20px;
+}
+
+.intro {
+    margin-bottom: 20px;
+}
+
+.intro h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.search {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.search input {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+}
+
+.search button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #003366;
+    color: white;
+    cursor: pointer;
+}
+
+.search button:hover {
+    background-color: #00509e;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project {
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.project img {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.project h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.project p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.container {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    /* Added gap between blocks */
+}
+
+.course,
+.teacher {
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+}
+
+.course h3,
+.teacher h3 {
+    margin-top: 0;
+}
+
+.course-description,
+.course-teacher,
+.course-hours {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.resources ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resources ul li {
+    margin-bottom: 10px;
+}
+
+.teacher-img {
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+}
+
+.activities,
+.organization,
+.members {
+    margin-bottom: 20px;
+}
+
+.activity {
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.activity h3 {
+    margin-top: 0;
+}
+
+.org-chart {
+    text-align: center;
+}
+
+.org-chart img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.member {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.member-img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.member-info {
+    flex: 1;
+}
+
+.org-chart-image {
+    /* height: 00px; */
+    width: 500px;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.about,
+.contact {
+    margin-bottom: 20px;
+}
+
+.about p,
+.contact p {
+    line-height: 1.6;
+}
+
+.contact a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.student-profiles {
+    padding: 2rem;
+    background-color: #f4f4f4;
+}
+
+.student-profiles h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.student-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.student-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.student-card:hover {
+    transform: scale(1.05);
+}
+
+.student-img {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    /* height: 200px; */
+    object-fit: cover;
+}
+
+.student-info {
+    padding: 1rem;
+}
+
+.student-info h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.student-info p {
+    margin-top: 0.5rem;
+    color: #666;
+}

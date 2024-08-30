@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>科学研究 - 同济大学计算机学院</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f4f8;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      background-color: #003366;
+      color: #ffffff;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .header-logo img {
+      height: 60px;
+      margin-right: 20px;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .navbar {
+      background-color: #00509e;
+      color: white;
+      padding: 10px 0;
+      border-bottom: 2px solid #003366;
+    }
+
+    .navbar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .navbar li {
+      display: inline;
+      margin: 0 20px;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      margin: 20px;
+    }
+
+    .intro {
+      margin-bottom: 20px;
+    }
+
+    .intro h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .intro p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .search {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .search input {
+      padding: 10px;
+      font-size: 16px;
+      width: 300px;
+      border: 1px solid #dcdcdc;
+      border-radius: 5px;
+    }
+
+    .search button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-left: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #003366;
+      color: white;
+      cursor: pointer;
+    }
+
+    .search button:hover {
+      background-color: #00509e;
+    }
+
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .project {
+      background-color: #ffffff;
+      border: 1px solid #dcdcdc;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 300px;
+      text-align: center;
+    }
+
+    .project img {
+      width: 100%;
+      height: 150px;
+      border-radius: 10px;
+    }
+
+    .project h3 {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+    .project p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .footer {
+      background-color: #003366;
+      color: #ffffff;
+      padding: 10px;
+      text-align: center;
+      border-top: 2px solid #00509e;
+      font-size: 14px;
+    }
+
+    .footer a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-logo">
+      <img src="logo.png" alt="同济大学校徽" />
+    </div>
+    <h1>同济大学 计算机学院 科学研究</h1>
+  </header>
+  <nav class="navbar" style="text-align: left">
+    <ul>
+      <li><a href="index.html">首页</a></li>
+      <li><a href="research.html">科学研究</a></li>
+      <li><a href="course.html">教务教学</a></li>
+      <li><a href="admin.html">党群工作</a></li>
+      <li><a href="student.html">学生风采</a></li>
+      <li><a href="aboutus.html">关于我们</a></li>
+    </ul>
+  </nav>
+  <main class="container">
+    <section class="intro">
+      <h2>科学研究简介</h2>
+      <p>同济大学计算机学院致力于推动前沿科技研究，涵盖人工智能、数据科学、计算机视觉等多个领域。我们的研究团队在国内外顶级学术期刊上发表了大量高质量的科研论文，取得了显著的成果。</p>
+    </section>
+    <section class="search">
+      <input type="text" id="search" placeholder="搜索研究项目..." />
+      <button onclick="searchResearch()">搜索</button>
+    </section>
+    <section class="projects">
+      <div class="project">
+        <img src="7.png" alt="研究项目 1" />
+        <h3>智能数据分析</h3>
+        <p>通过深度学习算法对大规模数据进行智能分析，挖掘数据中的潜在信息。</p>
+      </div>
+      <div class="project">
+        <img src="8.png" alt="研究项目 2" />
+        <h3>计算机视觉</h3>
+        <p>应用计算机视觉技术进行图像识别与处理，提升图像分析的准确性和效率。</p>
+      </div>
+      <div class="project">
+        <img src="9.png" alt="研究项目 3" />
+        <h3>人工智能与机器学习</h3>
+        <p>研究先进的人工智能和机器学习算法，推动智能系统的发展和应用。</p>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2024 同济大学计算机学院 | 地址: 上海市嘉定区曹安公路4800号 | 电话: 021-65982643 | 电子邮件: <a
+        href="mailto:info@cs.tongji.edu.cn">info@cs.tongji.edu.cn</a></p>
+  </footer>
+  <script>
+    function searchResearch() {
+      const query = document.getElementById('search').value.toLowerCase();
+      const projects = document.querySelectorAll('.project');
+
+      projects.forEach(project => {
+        const title = project.querySelector('h3').textContent.toLowerCase();
+        const description = project.querySelector('p').textContent.toLowerCase();
+
+        if (title.includes(query) || description.includes(query)) {
+          project.style.display = 'block';
+        } else {
+          project.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>

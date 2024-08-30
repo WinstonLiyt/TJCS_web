@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>教务教学 - 同济大学计算机学院</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f4f8;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      background-color: #003366;
+      color: #ffffff;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .header-logo img {
+      height: 60px;
+      margin-right: 20px;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .navbar {
+      background-color: #00509e;
+      color: white;
+      padding: 10px 0;
+      border-bottom: 2px solid #003366;
+    }
+
+    .navbar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .navbar li {
+      display: inline;
+      margin: 0 20px;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      margin: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .course,
+    .teacher {
+      background-color: #ffffff;
+      border: 1px solid #dcdcdc;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 100%;
+      max-width: 280px;
+      text-align: center;
+    }
+
+    .course h3,
+    .teacher h3 {
+      margin-top: 0;
+    }
+
+    .course-description,
+    .course-teacher,
+    .course-hours {
+      margin-bottom: 10px;
+      text-align: left;
+    }
+
+    .resources ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .resources ul li {
+      margin-bottom: 10px;
+    }
+
+    .teacher-img {
+      border-radius: 50%;
+      width: 55px;
+      height: 55px;
+    }
+
+    .footer {
+      background-color: #003366;
+      color: #ffffff;
+      padding: 10px;
+      text-align: center;
+      border-top: 2px solid #00509e;
+      font-size: 14px;
+    }
+
+    .footer a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-logo">
+      <img src="logo.png" alt="同济大学校徽" />
+    </div>
+    <h1>同济大学 计算机学院 教务教学</h1>
+  </header>
+  <nav class="navbar" style="text-align: left">
+    <ul>
+      <li><a href="index.html">首页</a></li>
+      <li><a href="research.html">科学研究</a></li>
+      <li><a href="course.html">教务教学</a></li>
+      <li><a href="admin.html">党群工作</a></li>
+      <li><a href="student.html">学生风采</a></li>
+      <li><a href="aboutus.html">关于我们</a></li>
+    </ul>
+  </nav>
+  <main class="container">
+    <section class="courses">
+      <h2>课程信息</h2>
+      <div class="course">
+        <h3>计算机网络</h3>
+        <p class="course-description">课程简介：介绍计算机网络的基本概念，包括网络协议、数据传输等。</p>
+        <p class="course-teacher">授课教师：陆教授</p>
+        <p class="course-hours">学时：48学时</p>
+      </div>
+      <div class="course">
+        <h3>操作系统原理</h3>
+        <p class="course-description">课程简介：探讨操作系统的基本原理，如进程管理、内存管理和文件系统等。</p>
+        <p class="course-teacher">授课教师：方教授</p>
+        <p class="course-hours">学时：64学时</p>
+      </div>
+    </section>
+    <section class="teachers">
+      <h2>教师介绍</h2>
+      <div class="teacher">
+        <img src="10.png" alt="陆教授" class="teacher-img" />
+        <h3>陆教授</h3>
+        <p>陆教授是计算机网络领域的专家，主要研究方向为计算机网络和计算机系统。</p>
+      </div>
+      <div class="teacher">
+        <img src="11.png" alt="方教授" class="teacher-img" />
+        <h3>方教授</h3>
+        <p>方教授在操作系统领域有广泛的研究，尤其关注操作系统的性能优化和安全性。</p>
+      </div>
+    </section>
+    <section class="resources">
+      <h2>教学资源</h2>
+      <ul>
+        <li><a href="resources/lecture_notes.pdf">课程讲义 - PDF</a></li>
+        <li><a href="resources/homework_assignments.pdf">作业 - PDF</a></li>
+        <li><a href="resources/exams.pdf">考试资料 - PDF</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2024 同济大学计算机学院 | 地址: 上海市嘉定区曹安公路4800号 | 电话: 021-65982643 | 电子邮件: <a
+        href="mailto:info@cs.tongji.edu.cn">info@cs.tongji.edu.cn</a></p>
+  </footer>
+</body>
+
+</html>

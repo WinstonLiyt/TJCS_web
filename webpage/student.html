@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>学生风采 - 同济大学计算机学院</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            background-color: #003366;
+            color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-logo img {
+            height: 60px;
+            margin-right: 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .navbar {
+            background-color: #00509e;
+            color: white;
+            padding: 10px 0;
+            border-bottom: 2px solid #003366;
+        }
+
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            margin: 20px;
+        }
+
+        .student-profiles {
+            padding: 2rem;
+            background-color: #f4f4f4;
+        }
+
+        .student-profiles h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .student-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .student-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .student-card:hover {
+            transform: scale(1.05);
+        }
+
+        .student-img {
+            width: 100%;
+            height: auto;
+            text-align: center;
+            object-fit: cover;
+        }
+
+        .student-info {
+            padding: 1rem;
+        }
+
+        .student-info h3 {
+            margin: 0;
+            font-size: 1.25rem;
+            color: #333;
+        }
+
+        .student-info p {
+            margin-top: 0.5rem;
+            color: #666;
+        }
+
+        .footer {
+            background-color: #003366;
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+            border-top: 2px solid #00509e;
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-logo">
+            <img src="logo.png" alt="同济大学校徽" />
+        </div>
+        <h1>同济大学 计算机学院 学生风采</h1>
+    </header>
+    <nav class="navbar" style="text-align: left">
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="research.html">科学研究</a></li>
+            <li><a href="course.html">教务教学</a></li>
+            <li><a href="admin.html">党群工作</a></li>
+            <li><a href="student.html">学生风采</a></li>
+            <li><a href="aboutus.html">关于我们</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <section class="student-profiles">
+            <h2>学生风采</h2>
+            <div class="student-grid">
+                <div class="student-card">
+                    <img src="10.png" alt="学生1" class="student-img" />
+                    <div class="student-info">
+                        <h3>张三</h3>
+                        <p>张三在计算机科学领域表现出色，曾参与多个创新项目，并获得了多个奖项。</p>
+                    </div>
+                </div>
+                <div class="student-card">
+                    <img src="11.png" alt="学生2" class="student-img" />
+                    <div class="student-info">
+                        <h3>李四</h3>
+                        <p>李四在编程竞赛中获奖，是学院的编程达人，积极参与各类学术活动。</p>
+                    </div>
+                </div>
+                <div class="student-card">
+                    <img src="11.png" alt="学生3" class="student-img" />
+                    <div class="student-info">
+                        <h3>王五</h3>
+                        <p>王五致力于研究人工智能领域，发表了多篇高水平论文，并获得了奖学金。</p>
+                    </div>
+                </div>
+                <div class="student-card">
+                    <img src="10.png" alt="学生4" class="student-img" />
+                    <div class="student-info">
+                        <h3>Elon Reeve Musk</h3>
+                        <p>Elon Reeve Musk致力于研究火箭发射与电动汽车，创办了多个初创公司。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 同济大学计算机学院 | 地址: 上海市嘉定区曹安公路4800号 | 电话: 021-65982643 | 电子邮件: <a
+                href="mailto:info@cs.tongji.edu.cn">info@cs.tongji.edu.cn</a></p>
+    </footer>
+</body>
+
+</html>
